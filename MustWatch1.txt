@@ -1,0 +1,53 @@
+struct Reactangle{
+    int length;
+    int breadth;
+};
+void init(struct Reactangle *r,int l,int v){
+    r->length=l;
+    r->breadth=b;
+}
+int area(struct Reactangle r)
+{
+    return r.length*r.breadth;
+}
+void changeLength(struct Reactangle *r,int l){
+    r->length=l;
+}
+int main(){
+
+    struct Reactangle r;
+    init(%&,10,5);
+    area(r);
+    changeLength(&r,20);
+
+    return 0;
+}
+
+__________________________________________
+C++ version:
+
+class Reactangle{
+    int length;
+    int breadth;
+
+    Reactangle(int l,int v){
+        length=l;
+        breadth=b;
+    }
+    int area()
+    {
+        return length*breadth;
+    }
+    void changeLength(int l){
+        length=l;
+    }
+};
+int main(){
+
+    Reactangle r;//
+   r.init(10,5);//Reactangle r(10,5);
+    r.area();
+    r.changeLength(20);
+
+    return 0;
+}

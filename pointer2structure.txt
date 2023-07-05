@@ -1,0 +1,22 @@
+Pointer to a structure:
+
+struct rectangle{
+    int length;
+    int breadth;
+};
+
+int main()
+{
+    struct rectangle r={10,5};
+    struct rectangle *p=&r;
+
+    //Accessing
+    p->length=20;
+
+    //creating a dynamic object
+    struct rectangle *p;
+    p=(struct rectangle *)malloc(sizeof(struct rectangle));
+    p->length=10;
+    p->breadth=5;
+
+}

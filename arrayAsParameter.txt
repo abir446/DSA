@@ -1,0 +1,22 @@
+Arrays can only be passed by address
+
+void fun(int a[],6)//The array size is to be send too
+{
+    -
+    -
+    -
+}
+
+How a function can return an array:
+
+int * fun(int n)
+{
+    int *p;
+    p=(int *)malloc(n*sizeof(int));
+    return p;
+}
+
+int main()
+{
+    int *a;
+}

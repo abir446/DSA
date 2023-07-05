@@ -1,0 +1,83 @@
+// // struct rectangle{
+// //     int length;
+// //     int breadth;
+// // };
+
+// // Memory consumption: total of all the data inside the structure.
+
+// // Decalaring a variable of that structure.
+
+// int main()
+// {
+//     struct rectangle r;//declaring variable r of the structure rectangle
+//     //Initialisation: struct rectangle r={10,5};
+
+//     //Accessing members of structure:
+//     // r.length = 15;
+
+     //calculatio:
+     // printf("Area of a rectngle is: %d",(r.length*r.breadth));
+
+        return 0;
+}
+
+1. Complex Number
+
+    a+ib
+    struct complex{
+        int real;
+        int img;
+    };
+
+    Memory: 4+4=8 bytes;
+
+2. Student
+
+    struct student{
+        int roll;
+        char name[20];
+        char dept[10];
+        char addess[50];
+
+        Memory: Addition of all;
+    };
+
+    variable declaring:
+
+    struct student s;
+    s.roll=10;
+    s.name="John";
+
+
+3. Playing cards:
+
+    face: A,2,3,..10,J,Q,K
+    shape: 0 (club), 1(spade), 3(diamond), 4(hearts)
+    colours: 0(black), 1(red)
+
+    struct Card{
+        int face;
+        int shape;
+        int colour;
+    };
+
+    Space: 12bytes;
+
+    variable:
+
+    struct Card c;
+    c.face=1;
+    c.shape=0;
+    c.colour=0;
+
+    OR
+
+    struct Card c={1,0,0};
+
+    For Deck of Cards:
+
+    struct Card deck[52];//Array of structures Memory: 52*12= ...  Initialisation struct Card deck[52] = {{1,0,0},{2,1,1}.....} 
+    
+    Printing a particular card:
+    printf("%d",deck[0].face);
+    printf("%d",deck[0].colour);

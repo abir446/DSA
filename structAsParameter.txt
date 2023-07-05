@@ -1,0 +1,79 @@
+/* Call by value */
+
+struct rectangle{
+    int length;
+    int breadth;
+};
+
+int area(struct rectangle r1)
+{
+    r1.length++; // No change in actual parameters
+
+    return (r1.length*r1.breadth);
+}
+
+int main()
+{
+    struct rectangle r={10,5};
+    printf("%d",area(r))
+}
+____________________________________________________________________________________________
+
+/* Call by Reference (in C++) */
+
+struct rectangle{
+    int length;
+    int breadth;
+};
+
+int area(struct rectangle &r1)
+{
+    r1.length++; // It will change in actual parameters
+
+    return (r1.length*r1.breadth);
+}
+
+int main()
+{
+    struct rectangle r={10,5};
+    printf("%d",area(r))
+}
+
+
+____________________________________________________________________________________________
+
+/* Call by Address */
+
+struct rectangle{
+    int length;
+    int breadth;
+};
+
+void changeLength(struct rectangle *p,int l)
+{
+    p->length=l;
+}
+
+int main()
+{
+    struct rectangle r={10,5};
+    changeLength(&r,20);
+}
+____________________________________________________________________________________________
+
+struct test{
+    int a[5];
+    int n;
+};
+
+void fun(struct test t1)
+{
+    t1.a[0]=10;
+    t1.a[1]=9;// This is will not change the actual parameters as this is call by value
+}
+
+int main()
+{
+    struct test t={{2,4,6,8,10},5};
+    fun(t);
+}

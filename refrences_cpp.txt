@@ -1,0 +1,13 @@
+References: 
+
+1. Definition: A nickname/alias given to a variable
+                another variable to the same address
+
+    int main()
+    {
+        int a=10;
+        int &r=a;//Reference variable
+        cout<<a: 10;
+        r++;
+        cout<<a: 11;
+    }

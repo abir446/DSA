@@ -1,0 +1,31 @@
+Functions: A piece of code which performs a specific task. A group of related instructions. They are also called as modules.
+
+Modular programming:
+
+function 1()
+{
+    -
+    -
+    -
+}
+int main()
+{
+    1();
+}
+
+int add(int a, int b) //Function prototype || Signature }  a & b are formal parameters
+{
+    int c;
+    c=a+b;
+    retirn c;
+}
+int main()
+{
+    int x,y,z;
+    x=10;
+    y=5;
+    z=add(x,y); // Calling The function | x & y are actual parameters
+    cout<<z<<endl;
+
+    return 0;
+}

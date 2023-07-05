@@ -1,0 +1,25 @@
+Pointers: It is an address variable meant for storing address of data not the data itself. Allows indirect access to data.
+
+Memory: A pointer takes 8 bytes
+
+Uses: 1. Accessing heap memory
+      2. Accessing resources
+      3. Passing parameters
+
+Declaration: 
+
+    int a=10;//normal
+    int *p;//pointer variable
+    p=&a;//storing the addess of a
+
+
+    //Printing the value of a
+    printf("%d",a);
+    printf("%d",*p); // dereferencing
+
+    int main()
+    {
+        int *p;
+        p=(int *)malloc(5*sizeof(int)); // c
+        p= new int[5];
+    }
